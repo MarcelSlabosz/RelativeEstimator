@@ -29,3 +29,6 @@ server/config.ini
 # JetBrains IDE
 .idea/
 *.iml
+
+# VS Code
+.vscode
