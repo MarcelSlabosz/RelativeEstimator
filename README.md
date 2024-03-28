@@ -1,15 +1,22 @@
 # Relative Estimator
 
-Relative Estimator is a simple application that can help am agile team during the task estimation process.
+Relative Estimator is a simple application that can help an agile team during the task estimation process.
 The application builds a list of referential tasks using Jira (by Atlassian) issues completed in previous sprints.
 
-# Installation
+# Development
+See [React App Development](docs/ReactAppDevelopment.md) for basic information about the web app development.
 
-## Requirements
+## Dev Containers - recommended
+This project has configured Dev Container (https://containers.dev). To start development simple open IDE of your choice and start dev container: 
+* Visual Studio Code; https://code.visualstudio.com/docs/devcontainers/containers
+* JetBrains IDE: https://www.jetbrains.com/help/idea/connect-to-devcontainer.html
+
+## Local Machine: 
+### Requirements:
 * Node.js - to build web application, 
-* Python 3.6+ - to start server and generate the referential tasks list.
+* Python 3.6+ - to start server and generate the referential tasks list
 
-## Browser App installation
+### Browser App installation
 0. Go to root project directory and execute:
     ```
     npm install
@@ -20,16 +27,17 @@ The application builds a list of referential tasks using Jira (by Atlassian) iss
     ```
 0. React App has been built.
 
-## Server installation
-It's highly recommended to use some Python Environment Manager eg. venv.
+### Server installation
+It's highly recommended to use some Python Environment Manager eg. venv (https://docs.python.org/3/library/venv.html).
 
-0. Go to server subdirectory
+0. Go to `server` subdirectory
 0. Install python requirements:
     ```
        pip3 install -r requirements.txt
     ```
-   
-# Configuration
+
+# Run
+## Configuration
 0. make copy of the `config_template.ini` file to `config.ini`
 0. open config file and enter the parameters:
 -  In the JIRA section put:
@@ -54,6 +62,3 @@ It's highly recommended to use some Python Environment Manager eg. venv.
     python3 server.py
     ```
 0. Open web browser page http://localhost:8080
-
-# Development
-See [React App Development](docs/ReactAppDevelopment.md) for basic information about the web app development.
